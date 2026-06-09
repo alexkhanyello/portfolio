@@ -26,28 +26,36 @@ export const Skills = ({ tech }: SkillsProps) => (
         <AccordionItem
           key={category}
           aria-label={category}
-          title={capitalize(category)}
+          title={
+  {
+    frontend: "Project Delivery",
+    backend: "E-commerce & Analytics",
+    uiUx: "Business Analysis",
+    graphicDesign: "Stakeholder Management",
+    motionDesign: "Cross-functional Collaboration",
+  }[category]
+}
         >
           <p className="mb-4 text-sm text-muted-foreground">{description}</p>
+<div className="flex flex-wrap gap-3">
+  {tools.map((tool) => (
+    <div
+      key={tool.name}
+      className="flex items-center gap-2 px-2.5 py-1.5 rounded-lg border border-primary/20 bg-content1"
+    >
+      <Icon
+        icon={tool.icon}
+        width={18}
+        height={18}
+        className="text-primary"
+      />
+      <span className="text-sm">{tool.name}</span>
+    </div>
+  ))}
+</div>
+         
 
-          <div className="relative h-[300px] w-full">
-            <OrbitingCircles
-              className="h-full w-full [&>div]:hover:scale-110 [&>div]:hover:text-primary-500"
-              duration={20}
-              radius={120}
-            >
-              {tools.map((tool) => (
-                <div key={tool.name}>
-                  <Icon
-                    className="transition-all duration-300"
-                    height={24}
-                    icon={tool.icon}
-                    width={24}
-                  />
-                </div>
-              ))}
-            </OrbitingCircles>
-          </div>
+
         </AccordionItem>
       ))}
     </Accordion>

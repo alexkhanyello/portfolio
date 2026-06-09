@@ -45,18 +45,26 @@ export const HeroSection = ({
             initial={{ opacity: 0, y: 20 }}
             transition={{ delay: 0.2, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
-            Hi, I&apos;m {name} &mdash; I design &amp; code modern web
-            experiences.
+            Hi, I&apos;m {name}
           </motion.h1>
 
-          <motion.p
-            animate={{ opacity: 1, y: 0 }}
-            className="text-foreground-600 text-lg md:text-xl mb-8 leading-relaxed"
-            initial={{ opacity: 0, y: 20 }}
-            transition={{ delay: 0.4, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          >
-            {title}: {subtitle}
-          </motion.p>
+          <motion.h2
+  animate={{ opacity: 1, y: 0 }}
+  className="text-2xl md:text-3xl font-semibold mb-4 text-foreground"
+  initial={{ opacity: 0, y: 20 }}
+  transition={{ delay: 0.4, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+>
+  {title}
+</motion.h2>
+
+<motion.p
+  animate={{ opacity: 1, y: 0 }}
+  className="text-foreground-600 text-lg md:text-xl mb-8 leading-relaxed max-w-3xl mx-auto"
+  initial={{ opacity: 0, y: 20 }}
+  transition={{ delay: 0.5, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+>
+  {subtitle}
+</motion.p>
 
           <motion.div
             animate={{ opacity: 1, y: 0 }}
@@ -68,7 +76,7 @@ export const HeroSection = ({
               download
               aria-label="Download CV in PDF format"
               className="w-full sm:w-auto"
-              href="/new CV.pdf"
+              href="/Alexander_Khan_CV.pdf"
             >
               <Button
                 fullWidth
@@ -83,7 +91,7 @@ export const HeroSection = ({
             </Link>
             <Button
               fullWidth
-              aria-label="View Work"
+              aria-label="View Experience"
               className="w-full sm:w-auto"
               color="primary"
               endContent={<Icon icon="lucide:arrow-down" />}
@@ -91,7 +99,7 @@ export const HeroSection = ({
               variant="bordered"
               onPress={scrollToWork}
             >
-              View Work
+              View Experience
             </Button>
           </motion.div>
         </motion.div>

@@ -12,7 +12,7 @@ export const SkillsOverviewSection = () => {
   const { sectionTitle, sectionDescription } = DATA.home.skills;
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-content2">
+    <section className="py-12 bg-gradient-to-b from-background to-content2">
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center mb-16"
@@ -50,9 +50,7 @@ export const SkillsOverviewSection = () => {
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold">{skill.name}</h3>
-                      <p className="text-foreground-600">{skill.level}%</p>
-                    </div>
-                  </div>
+                  </div></div>
                   <Progress
                     className="h-2"
                     color={skill.color}

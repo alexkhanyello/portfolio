@@ -4,6 +4,7 @@ import { ExperienceTimeline } from "@/components/about/timelines/experience-time
 import { Skills } from "@/components/about/skills";
 import { PageHeader } from "@/components/page-header";
 import { DATA } from "@/data";
+import { ProfessionalToolkit } from "@/components/about/professional-toolkit";
 
 export default function AboutPage() {
   const { education, experience, profile } = DATA.about;
@@ -21,7 +22,8 @@ export default function AboutPage() {
 
       <EducationTimeline education={education} />
       <ExperienceTimeline experience={experience} />
-      <Skills tech={tech} />
+      <Skills tech={DATA.about.technologies} />
+<ProfessionalToolkit />
     </section>
   );
 }

@@ -1,41 +1,41 @@
 export const DATA = {
   home: {
-    hero: {
-      name: "Sofiane Bahmed",
-      title: "Full stack developer & UI/UX Designer",
-      subtitle:
-        "I build fast, accessible and visually engaging web experiences.",
-    },
+  hero: {
+    name: "Alexander Khan",
+    title: "Project Manager - E-commerce & Digital Products",
+    subtitle:
+  "Google Certified Project Manager specializing in e-commerce platforms, Agile delivery, stakeholder management, and cross-functional team coordination.",
+  },
     skills: {
-      sectionTitle: "Skills & Expertise",
+      sectionTitle: "Core Competencies",
       sectionDescription:
-        " Specialized in creating modern digital experiences with cutting-edge technologies",
+  "Experience in project delivery, Agile methodologies, stakeholder communication, and e-commerce platform development.",
       overview: [
-        {
-          name: "UI/UX Design",
-          level: 95,
-          icon: "lucide:layout-dashboard",
-          color: "primary",
-        },
-        {
-          name: "Frontend Development",
-          level: 90,
-          icon: "lucide:code",
-          color: "secondary",
-        },
-        {
-          name: "Mobile Development",
-          level: 85,
-          icon: "lucide:smartphone",
-          color: "success",
-        },
-        {
-          name: "Motion Design",
-          level: 88,
-          icon: "lucide:video",
-          color: "warning",
-        },
-      ],
+  {
+    name: "Project Management",
+    level: 95,
+    icon: "lucide:briefcase",
+    color: "primary",
+  },
+  {
+    name: "Agile & Scrum",
+    level: 90,
+    icon: "lucide:kanban",
+    color: "secondary",
+  },
+  {
+    name: "Stakeholder Management",
+    level: 92,
+    icon: "lucide:users",
+    color: "success",
+  },
+  {
+    name: "E-commerce Operations",
+    level: 94,
+    icon: "lucide:shopping-cart",
+    color: "warning",
+  },
+],
     },
     testimonials: {
       sectionTitle: "Client Testimonials",
@@ -102,191 +102,184 @@ export const DATA = {
   },
   about: {
     profile: {
-      name: "Sofiane Bahmed",
-      title: "Full Stack Developer",
+      name: "Alexander Khan",
+      title: "Project Manager | E-commerce | Digital Products",
       image:
-        "https://res.cloudinary.com/devq06psf/image/upload/v1750626923/chic_soba_bkhd8o.png",
+        "/Alexander_Khan.webp",
       description: [
-        "I'm a creative full-stack developer with a passion for UI/UX design and clean code. I focus on building beautiful, functional, and high-performance websites and web apps.",
-        "My approach is both technical and aesthetic — I enjoy turning complex problems into elegant user experiences. I work primarily with modern frameworks like React, Vite, and TailwindCSS.",
-        "Outside of code, I enjoy motion design, product strategy, and always pushing the boundaries of front-end development.",
-      ],
+         "Google Certified Project Manager with hands-on experience in e-commerce platform development and digital product delivery.",
+         "I coordinate cross-functional teams, manage stakeholder communication, and drive feature implementation from idea to release.",
+         "My focus areas include Agile project management, backlog prioritization, process optimization, and e-commerce growth initiatives.",
+      
+        ],
     },
-    education: [
-      {
-        title: "High School of Art and Design",
-        date: "2003 - 2006",
-        icon: "mdi:palette",
-        description:
-          "Focused on foundational art and visual design principles, which sparked my early interest in creative problem solving. Explored traditional media, digital illustration, and visual storytelling.",
-      },
-      {
-        title: "University of Technology and Design",
-        date: "2006 - 2010",
-        icon: "mdi:school",
-        description:
-          "Earned a Bachelor's degree in Computer Science with a minor in Design. Gained strong skills in software development, user interface engineering, data structures, and human-computer interaction.",
-      },
-      {
-        title: "Institute of Interactive Media",
-        date: "2011 - 2012",
-        icon: "mdi:school-outline",
-        description:
-          "Completed a Master's degree specializing in UX/UI Design and Front-End Development. Merged technical expertise with visual communication to design user-centered digital products and prototypes.",
-      },
-    ],
-    experience: [
-      {
-        title: "Creative Director",
-        date: "2018 - Present",
-        icon: "mdi:briefcase",
-        description:
-          "Lead creative and development teams to build digital experiences that combine innovation with user empathy. Oversee branding, UI/UX strategy, and development pipelines for tech startups and clients.",
-      },
-      {
-        title: "Senior UX Engineer",
-        date: "2015 - 2018",
-        icon: "mdi:monitor-dashboard",
-        description:
-          "Designed and implemented high-fidelity web interfaces using React, Figma, and Tailwind. Collaborated cross-functionally with developers and designers to craft intuitive user flows and interactions.",
-      },
-      {
-        title: "Front-End Developer & Designer",
-        date: "2012 - 2015",
-        icon: "mdi:code-tags",
-        description:
-          "Developed responsive websites and applications with a focus on accessibility, visual aesthetics, and performance. Delivered pixel-perfect interfaces from wireframes to production code.",
-      },
-    ],
-    technologies: {
-      frontend: {
-        description:
-          "I craft dynamic, responsive UIs using modern JavaScript frameworks and CSS tools.",
-        tools: [
-          { name: "React", icon: "logos:react" },
-          { name: "Next.js", icon: "skill-icons:nextjs-dark" },
-          { name: "Tailwind", icon: "logos:tailwindcss-icon" },
-          { name: "TypeScript", icon: "logos:typescript-icon" },
-          { name: "HTML5", icon: "logos:html-5" },
-          { name: "CSS3", icon: "logos:css-3" },
-        ],
-      },
-      backend: {
-        description:
-          "I build fast APIs and scalable backends using Node.js, Bun, and Python.",
-        tools: [
-          { name: "Node.js", icon: "logos:nodejs-icon" },
-          { name: "Bun", icon: "logos:bun" },
-          { name: "Python", icon: "logos:python" },
-          { name: "MySQL", icon: "logos:mysql-icon" },
-          { name: "PostgresSQL", icon: "logos:postgresql" },
-          { name: "OpenAI", icon: "simple-icons:openai" },
-        ],
-      },
-      uiUx: {
-        description:
-          "I design smooth, user-centered interfaces and high-fidelity prototypes.",
-        tools: [
-          { name: "Figma", icon: "logos:figma" },
-          { name: "Framer", icon: "simple-icons:framer", color: "#0055FF" },
-          { name: "Notion", icon: "logos:notion-icon" },
-        ],
-      },
-      graphicDesign: {
-        description:
-          "My graphic work includes logos, branding, and posters using Adobe Suite.",
-        tools: [
-          { name: "Photoshop", icon: "logos:adobe-photoshop" },
-          { name: "Illustrator", icon: "logos:adobe-illustrator" },
-        ],
-      },
-      motionDesign: {
-        description:
-          "I animate UI flows and cinematic intros using After Effects and Blender.",
-        tools: [
-          { name: "After Effects", icon: "logos:adobe-after-effects" },
-          { name: "Premiere Pro", icon: "logos:adobe-premiere" },
-          { name: "Blender", icon: "logos:blender" },
-        ],
-      },
-    },
+education: [
+  {
+    title: "Information Systems",
+    date: "2007 - 2011",
+    description:
+      "Al-Farabi Kazakh National University, Faculty of Mechanics and Mathematics.",
   },
+  {
+    title: "Google Project Management Professional Certificate",
+    date: "2026",
+    description:
+      "Professional certification covering project planning, Agile methodologies, stakeholder management, risk management, and project execution.",
+  },
+],
+
+experience: [
+  {
+    title: "E-commerce Project Manager",
+    company: "ZETA",
+    date: "Mar 2023 - Present",
+    description:
+      "Coordinating the development and growth of ZETA.kz e-commerce platform with 40,000+ products. Managing backlog in Jira, gathering business requirements, writing user stories and acceptance criteria, coordinating stakeholders, developers, SEO, CRM and DevOps contractors.",
+  },
+  {
+    title: "Freelance Web & E-commerce Consultant",
+    company: "Self-employed",
+    date: "Jan 2020 - Present",
+    description:
+      "Launching and supporting websites and online stores, coordinating contractors, managing content, analytics, SEO initiatives, and digital product improvements.",
+  },
+  {
+    title: "Web Administrator / E-commerce Specialist",
+    company: "M-ZIB",
+    date: "Mar 2019 - Jun 2022",
+    description:
+      "Managed corporate websites, coordinated developers and designers, supported online sales initiatives, maintained content and supervised website improvements.",
+  },
+],
+
+technologies: {
+  frontend: {
+    description:
+      "Project management, Agile delivery, backlog management and stakeholder communication.",
+    tools: [
+      { name: "Jira", icon: "logos:jira" },
+      { name: "Confluence", icon: "logos:confluence" },
+      { name: "Agile", icon: "mdi:lightning-bolt" },
+      { name: "Scrum", icon: "mdi:account-group" },
+      { name: "UAT", icon: "mdi:clipboard-check" },
+      { name: "SEO", icon: "mdi:magnify" },
+    ],
+  },
+
+  backend: {
+    description:
+      "E-commerce operations, analytics and digital product optimization.",
+    tools: [
+      { name: "Google Analytics", icon: "logos:google-analytics" },
+      { name: "Google Search Console", icon: "logos:google-search-console" },
+      { name: "Hotjar", icon: "simple-icons:hotjar" },
+      { name: "CRM", icon: "mdi:account-box" },
+      { name: "A/B Testing", icon: "mdi:test-tube" },
+      { name: "Reporting", icon: "mdi:chart-box" },
+    ],
+  },
+
+  uiUx: {
+    description:
+      "Documentation, requirements gathering and process management.",
+    tools: [
+      { name: "User Stories", icon: "mdi:file-document-outline" },
+      { name: "Acceptance Criteria", icon: "mdi:check-circle-outline" },
+      { name: "Process Mapping", icon: "mdi:source-branch" },
+      { name: "Business Analysis", icon: "mdi:briefcase-search" },
+    ],
+  },
+
+  graphicDesign: {
+    description:
+      "Cross-functional collaboration with developers, SEO and business teams.",
+    tools: [
+      { name: "Stakeholder Management", icon: "mdi:account-group" },
+      { name: "Team Coordination", icon: "mdi:account-multiple" },
+      { name: "Release Management", icon: "mdi:rocket-launch" },
+    ],
+  },
+
+  motionDesign: {
+    description:
+      "Continuous improvement and growth initiatives for digital products.",
+    tools: [
+      { name: "Conversion Optimization", icon: "mdi:trending-up" },
+      { name: "Product Discovery", icon: "mdi:lightbulb-outline" },
+      { name: "Roadmapping", icon: "mdi:map-marker-path" },
+    ],
+  },
+},},
   projects: {
-    sectionTitle: "Featured Projects",
+    sectionTitle: "Key Initiatives",
     sectionDescription:
-      "A selection of my recent projects showcasing UI/UX design and development expertise",
+      "Key e-commerce and digital product initiatives focused on delivery, optimization, and business growth.",
     work: [
       {
-        id: 1,
-        title: "Digital Banking App",
-        description:
-          "A streamlined digital banking interface emphasizing clarity, speed, and intuitive design.",
-        image: "https://img.heroui.chat/image/dashboard?w=600&h=400&u=1",
-        gallery: [
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=1",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=1-1",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=1-2",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=1-3",
-        ],
-        category: "Applications",
-        details:
-          "A feature-rich digital banking app built with React and TailwindCSS, integrating seamless animations via Framer Motion. Designed with a mobile-first approach and a modular component system powered by TypeScript and Vite.",
-        github: "https://github.com",
-        live: "https://example.com",
-        tech: [
-          { name: "React", icon: "logos:react" },
-          { name: "TailwindCSS", icon: "logos:tailwindcss-icon" },
-          { name: "TypeScript", icon: "logos:typescript-icon" },
-          { name: "Expo", icon: "simple-icons:expo" },
-        ],
-      },
+  id: 1,
+  title: "ZETA.KZ E-commerce Platform",
+  description:
+    "Coordinated roadmap execution, feature delivery, stakeholder communication, testing and release management for an e-commerce platform with 40,000+ products.",
+
+  category: "E-commerce",
+
+  details:
+    "Coordinated feature delivery, backlog management, stakeholder communication, testing, and release processes for the ZETA.KZ online store. Worked closely with developers, SEO specialists, content managers, and business stakeholders to improve customer experience and business performance.",
+
+  github: "",
+  live: "https://zeta.kz",
+
+  tech: [
+    { name: "Jira", icon: "logos:jira" },
+    { name: "Confluence", icon: "logos:confluence" },
+    { name: "SEO", icon: "mdi:magnify" },
+    { name: "Agile", icon: "mdi:lightning-bolt" },
+  ],
+},
       {
-        id: 2,
-        title: "E-commerce Platform",
-        description:
-          "Scalable and responsive online store with dynamic product filtering and intuitive cart management.",
-        image: "https://img.heroui.chat/image/dashboard?w=600&h=400&u=2",
-        gallery: [
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=2",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=2-1",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=2-2",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=2-3",
-        ],
-        category: "Web Development",
-        details:
-          "A fully functional e-commerce platform built with React and TailwindCSS. Features product listings, advanced filters, cart and checkout system, and a modern UI with responsive design for all devices.",
-        github: "https://github.com",
-        live: "https://example.com",
-        tech: [
-          { name: "React", icon: "logos:react" },
-          { name: "TailwindCSS", icon: "logos:tailwindcss-icon" },
-          { name: "TypeScript", icon: "logos:typescript-icon" },
-          { name: "PostgreSQL", icon: "logos:postgresql" },
-        ],
-      },
+  id: 2,
+  title: "E-commerce Website Launch",
+
+  description:
+    "Coordinated development and launch of a new online sales platform from scratch.",
+
+  category: "WEBSITE LAUNCH",
+
+  details:
+    "Coordinated requirements gathering, sprint planning, UAT testing, stakeholder alignment, and successful launch of a new e-commerce platform.",
+
+  github: "",
+  live: "",
+
+  tech: [
+    { name: "Agile", icon: "mdi:lightning-bolt" },
+    { name: "Jira", icon: "logos:jira" },
+    { name: "UAT", icon: "mdi:clipboard-check" },
+    { name: "Scrum", icon: "mdi:account-group" },
+  ],
+},
       {
-        id: 3,
-        title: "Travel Booking System",
-        description:
-          "Comprehensive booking platform for flights, hotels, and rentals with live availability.",
-        image: "https://img.heroui.chat/image/dashboard?w=600&h=400&u=3",
-        gallery: [
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=3",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=3-1",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=3-2",
-          "https://img.heroui.chat/image/dashboard?w=600&h=400&u=3-3",
-        ],
-        category: "Web Development",
-        details:
-          "A modern travel booking system built with Next.js and TailwindCSS. Users can search and book flights, hotels, and car rentals with real-time availability and intuitive UI components powered by HeroUI.",
-        github: "https://github.com",
-        live: "https://example.com",
-        tech: [
-          { name: "Next.js", icon: "skill-icons:nextjs-dark" },
-          { name: "TailwindCSS", icon: "logos:tailwindcss-icon" },
-          { name: "TypeScript", icon: "logos:typescript-icon" },
-        ],
-      },
+  id: 3,
+  title: "SEO & Conversion Improvements",
+
+  description:
+    "Cross-functional initiative focused on organic traffic growth and customer journey optimization.",
+
+  category: "Optimization",
+
+  details:
+    "Led implementation of technical SEO improvements, customer journey enhancements, and conversion-focused platform updates.",
+
+  github: "",
+  live: "",
+
+  tech: [
+    { name: "SEO", icon: "mdi:magnify" },
+    { name: "Analytics", icon: "mdi:chart-line" },
+    { name: "A/B Testing", icon: "mdi:flask" },
+    { name: "Jira", icon: "logos:jira" },
+  ],
+},
       {
         id: 4,
         title: "AI Chat Assistant",
@@ -463,7 +456,7 @@ export const DATA = {
     },
   },
   morphingTexts: {
-    about: ["Creative", "Passionate", "Developer"] as const,
+    about: ["E-commerce PM", "Digital Products Specialist", "Project Manager"] as const,
     projects: ["My Work", "Creations", "Experiments", "Innovations"] as const,
     contact: ["Let's", "Build", "Together"] as const,
   },
@@ -474,27 +467,25 @@ export const DATA = {
     { name: "Contact", href: "/contact", icon: "lucide:send" },
   ],
   footer: {
-    name: "Sofiane Bahmed",
+    name: "Alexander Khan",
     description: "Always interested in new projects and collaborations.",
     contact: {
-      email: "hello@example.com",
-      phone: "+1 (555) 123-4567",
-      location: "San Francisco, CA",
+      email: "kzfyello@gmail.com",
+      phone: "+7 (777) 2091100",
+      location: "Almaty, KZ",
     },
     socialLinks: [
-      { platform: "X", url: "https://x.com", icon: "simple-icons:x" },
-      { platform: "GitHub", url: "https://github.com", icon: "mdi:github" },
-      {
-        platform: "LinkedIn",
-        url: "https://linkedin.com",
-        icon: "mdi:linkedin",
-      },
+      { platform: "Instagram", url: "https://www.instagram.com/a.khan.kz", icon: "mdi:instagram" },
+      { platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/alexandrkhan",
+        icon: "mdi:linkedin" },
+      { platform: "GitHub", url: "https://github.com/alexkhanyello", icon: "mdi:github" },
       {
         platform: "Dribbble",
-        url: "https://dribbble.com",
+        url: "https://cv.alexkhan.site",
         icon: "mdi:dribbble",
       },
     ],
-    services: ["UI/UX Design", "Web Development", "Mobile Apps", "Consulting"],
+    services: ["Project Delivery", "E-commerce Management", "Stakeholder Coordination", "Process Optimization"],
   },
 } as const;
