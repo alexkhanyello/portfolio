@@ -38,9 +38,9 @@ export const ProfessionalToolkit = () => {
         </div>
 
         <OrbitingCircles
-          radius={170}
-          duration={35}
           className="h-full w-full"
+          duration={35}
+          radius={170}
         >
           {tools.map((tool) => (
             <div
