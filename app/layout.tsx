@@ -17,22 +17,60 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("http://localhost:3000"),
+  metadataBase: new URL("https://cv.alexkhan.site"),
+
   title: {
-    default: DATA.home.hero.name,
-    template: `%s | ${DATA.home.hero.name}`,
+    default: "Alexander Khan | Project Manager",
+    template: "%s | Alexander Khan",
   },
-  description: DATA.home.hero.subtitle,
+
+  description:
+    "Project Manager specializing in e-commerce, Agile delivery, stakeholder management, backlog prioritization, and digital product development.",
+
+  keywords: [
+    "Alexander Khan",
+    "Alex Khan",
+    "Александр Хан",
+    "Project Manager",
+    "IT Project Manager",
+    "E-commerce Project Manager",
+    "Digital Project Manager",
+    "Product Manager",
+    "Agile",
+    "Scrum",
+    "Jira",
+    "Confluence",
+    "Digital Products",
+    "E-commerce",
+    "Almaty",
+    "Kazakhstan",
+    "ZETA",
+  ],
+
   openGraph: {
-    title: {
-      default: DATA.home.hero.name,
-      template: `%s | ${DATA.home.hero.name}`,
-    },
-    description: DATA.home.hero.subtitle,
-    siteName: DATA.home.hero.name,
+    title: "Alexander Khan | Project Manager",
+    description:
+      "Project Manager specializing in e-commerce, Agile delivery, stakeholder management, backlog prioritization, and digital product development.",
+    siteName: "Alexander Khan",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Alexander Khan | Project Manager",
+    description:
+      "Project Manager specializing in e-commerce, Agile delivery and digital products.",
+    images: ["/og-image.png"],
+  },
+
   robots: {
     index: true,
     follow: true,
@@ -43,13 +81,6 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-  },
-  twitter: {
-    title: {
-      default: DATA.home.hero.name,
-      template: `%s | ${DATA.home.hero.name}`,
-    },
-    card: "summary_large_image",
   },
 };
 
