@@ -220,15 +220,13 @@ technologies: {
   title: "ZETA.KZ E-commerce Platform",
   description:
     "Coordinated roadmap execution, feature delivery, stakeholder communication, testing and release management for an e-commerce platform with 40,000+ products.",
-
+  image: "/Alexander_Khan.webp",
+  gallery: ["/Alexander_Khan.webp"],
   category: "E-commerce",
-
   details:
     "Coordinated feature delivery, backlog management, stakeholder communication, testing, and release processes for the ZETA.KZ online store. Worked closely with developers, SEO specialists, content managers, and business stakeholders to improve customer experience and business performance.",
-
   github: "",
   live: "https://zeta.kz",
-
   tech: [
     { name: "Jira", icon: "logos:jira" },
     { name: "Confluence", icon: "logos:confluence" },
@@ -242,15 +240,13 @@ technologies: {
 
   description:
     "Coordinated development and launch of a new online sales platform from scratch.",
-
+  image: "/Alexander_Khan.webp",
+  gallery: ["/Alexander_Khan.webp"],
   category: "WEBSITE LAUNCH",
-
   details:
     "Coordinated requirements gathering, sprint planning, UAT testing, stakeholder alignment, and successful launch of a new e-commerce platform.",
-
   github: "",
   live: "",
-
   tech: [
     { name: "Agile", icon: "mdi:lightning-bolt" },
     { name: "Jira", icon: "logos:jira" },
@@ -261,15 +257,13 @@ technologies: {
       {
   id: 3,
   title: "SEO & Conversion Improvements",
-
   description:
     "Cross-functional initiative focused on organic traffic growth and customer journey optimization.",
-
+  image: "/Alexander_Khan.webp",
+  gallery: ["/Alexander_Khan.webp"],
   category: "Optimization",
-
   details:
     "Led implementation of technical SEO improvements, customer journey enhancements, and conversion-focused platform updates.",
-
   github: "",
   live: "",
 
