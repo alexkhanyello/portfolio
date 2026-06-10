@@ -43,6 +43,7 @@ const ContactPage: React.FC = () => {
           color: "danger",
         });
         setState((prev) => ({ ...prev, isSubmitting: false }));
+
         return;
       }
 
