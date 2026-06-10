@@ -1,15 +1,14 @@
 import "@/app/globals.css"
-
 import { clsx } from "clsx";
 import { type Metadata } from "next";
 import { Inter } from "next/font/google";
-
 import { DATA } from "@/data";
 import { Footer } from "@/components/footer";
 import { Navigation } from "@/components/navbar";
 import { PageWrapper } from "@/components/page-wrapper";
 import { Providers } from "@/app/providers";
 import { StarsBackground } from "@/components/backgrounds/stars";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -111,7 +110,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
             defaultTheme: "dark",
           }}
         >
-          <StarsBackground>{content}</StarsBackground>
+            <StarsBackground>{content}</StarsBackground>
+            <Analytics />
         </Providers>
       </body>
     </html>
