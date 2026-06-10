@@ -3,9 +3,7 @@ import { motion } from "framer-motion";
 import { Icon } from "@iconify/react";
 import { Accordion, AccordionItem } from "@heroui/react";
 
-import { OrbitingCircles } from "@/components/orbiting-circles";
 import { SectionHeader } from "@/components/about/section-header";
-import { capitalize } from "@/lib/utils";
 import { TechCategories } from "@/components/about/types";
 
 interface SkillsProps {
@@ -44,10 +42,10 @@ export const Skills = ({ tech }: SkillsProps) => (
       className="flex items-center gap-2 px-2.5 py-1.5 rounded-lg border border-primary/20 bg-content1"
     >
       <Icon
+        className="text-primary"
+        height={18}
         icon={tool.icon}
         width={18}
-        height={18}
-        className="text-primary"
       />
       <span className="text-sm">{tool.name}</span>
     </div>
