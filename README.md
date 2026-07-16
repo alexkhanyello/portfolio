@@ -4,7 +4,7 @@ Personal portfolio website built with Next.js, TypeScript and Tailwind CSS.
 
 ## Live Demo
 
-https://cv.alexkhan.site
+https://alexkhan.site
 
 ## Features
 

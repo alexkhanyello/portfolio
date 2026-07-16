@@ -476,7 +476,7 @@ technologies: {
       { platform: "GitHub", url: "https://github.com/alexkhanyello", icon: "mdi:github" },
       {
         platform: "Dribbble",
-        url: "https://cv.alexkhan.site",
+        url: "https://alexkhan.site",
         icon: "mdi:dribbble",
       },
     ],

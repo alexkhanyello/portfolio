@@ -18,7 +18,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cv.alexkhan.site"),
+  metadataBase: new URL("https://alexkhan.site"),
 
   title: {
     default: "Alexander Khan | Project Manager",
