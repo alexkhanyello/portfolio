@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef } from "react";
+import { useReducedMotion } from "framer-motion";
 
 import { cn } from "@/lib/utils";
 
@@ -98,8 +99,15 @@ interface MorphingTextProps {
   texts: readonly string[];
 }
 
-const Texts: React.FC<Pick<MorphingTextProps, "texts">> = ({ texts }) => {
+const Texts: React.FC<Pick<MorphingTextProps, "texts"> & { reducedMotion: boolean }> = ({
+  texts,
+  reducedMotion,
+}) => {
   const { text1Ref, text2Ref } = useMorphingText(texts);
+
+  if (reducedMotion) {
+    return <span className="inline-block w-full">{texts[0]}</span>;
+  }
 
   return (
     <>
@@ -135,14 +143,19 @@ const SvgFilters: React.FC = () => (
 export const MorphingText: React.FC<MorphingTextProps> = ({
   texts,
   className,
-}) => (
-  <div
-    className={cn(
-      "relative mx-auto h-16 w-full max-w-screen-md text-center font-sans text-[40pt] font-bold leading-none [filter:url(#threshold)_blur(0.6px)] md:h-24 lg:text-[6rem]",
-      className,
-    )}
-  >
-    <Texts texts={texts} />
-    <SvgFilters />
-  </div>
-);
+}) => {
+  const reducedMotion = useReducedMotion();
+
+  return (
+    <div
+      className={cn(
+        "relative mx-auto h-16 w-full max-w-screen-md text-center font-sans text-[40pt] font-bold leading-none md:h-24 lg:text-[6rem]",
+        !reducedMotion && "[filter:url(#threshold)_blur(0.6px)]",
+        className,
+      )}
+    >
+      <Texts texts={texts} reducedMotion={Boolean(reducedMotion)} />
+      {!reducedMotion && <SvgFilters />}
+    </div>
+  );
+};

@@ -7,6 +7,7 @@ import {
   type SpringOptions,
   type Transition,
   useMotionValue,
+  useReducedMotion,
   useSpring,
 } from "framer-motion";
 
@@ -17,6 +18,7 @@ type StarLayerProps = HTMLMotionProps<"div"> & {
   size: number;
   transition: Transition;
   starColor: string;
+  shouldAnimate: boolean;
 };
 
 function generateStars(count: number, starColor: string) {
@@ -37,6 +39,7 @@ function StarLayer({
   size = 1,
   transition = { repeat: Infinity, duration: 50, ease: "linear" },
   starColor = "#fff",
+  shouldAnimate,
   className,
   ...props
 }: StarLayerProps) {
@@ -48,10 +51,10 @@ function StarLayer({
 
   return (
     <motion.div
-      animate={{ y: [0, -2000] }}
-      className={cn("absolute top-0 left-0 w-full h-[2000px]", className)}
+      animate={shouldAnimate ? { y: [0, -2000] } : { y: 0 }}
+      className={cn("absolute top-0 left-0 w-full h-[2000px] will-change-transform", className)}
       data-slot="star-layer"
-      transition={transition}
+      transition={shouldAnimate ? transition : { duration: 0 }}
       {...props}
     >
       <div
@@ -82,6 +85,22 @@ type StarsBackgroundProps = React.ComponentProps<"div"> & {
   pointerEvents?: boolean;
 };
 
+function useIsMobile() {
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 767px)");
+    const updateIsMobile = () => setIsMobile(mediaQuery.matches);
+
+    updateIsMobile();
+    mediaQuery.addEventListener("change", updateIsMobile);
+
+    return () => mediaQuery.removeEventListener("change", updateIsMobile);
+  }, []);
+
+  return isMobile;
+}
+
 function StarsBackground({
   children,
   className,
@@ -92,11 +111,17 @@ function StarsBackground({
   pointerEvents = true,
   ...props
 }: StarsBackgroundProps) {
+  const isMobile = useIsMobile();
+  const prefersReducedMotion = useReducedMotion();
   const offsetX = useMotionValue(1);
   const offsetY = useMotionValue(1);
 
   const springX = useSpring(offsetX, transition);
   const springY = useSpring(offsetY, transition);
+  const shouldAnimate = !isMobile && !prefersReducedMotion;
+  const starCounts = isMobile || prefersReducedMotion
+    ? [120, 60, 30]
+    : [600, 240, 120];
 
   const handleMouseMove = React.useCallback(
     (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
@@ -118,23 +143,25 @@ function StarsBackground({
         className,
       )}
       data-slot="stars-background"
-      onMouseMove={handleMouseMove}
+      onMouseMove={shouldAnimate ? handleMouseMove : undefined}
       {...props}
     >
       <motion.div
         className={cn({ "pointer-events-none": !pointerEvents })}
-        style={{ x: springX, y: springY }}
+        style={shouldAnimate ? { x: springX, y: springY } : undefined}
       >
         <StarLayer
-          count={1000}
+          count={starCounts[0]}
           size={1}
           starColor={starColor}
+          shouldAnimate={shouldAnimate}
           transition={{ repeat: Infinity, duration: speed, ease: "linear" }}
         />
         <StarLayer
-          count={400}
+          count={starCounts[1]}
           size={2}
           starColor={starColor}
+          shouldAnimate={shouldAnimate}
           transition={{
             repeat: Infinity,
             duration: speed * 2,
@@ -142,9 +169,10 @@ function StarsBackground({
           }}
         />
         <StarLayer
-          count={200}
+          count={starCounts[2]}
           size={3}
           starColor={starColor}
+          shouldAnimate={shouldAnimate}
           transition={{
             repeat: Infinity,
             duration: speed * 3,
