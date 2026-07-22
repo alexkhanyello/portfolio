@@ -48,12 +48,12 @@ const ContactPage: React.FC = () => {
       }
 
       try {
-        const templateParams = {
-          from_name: formData.name,
-          from_email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-        };
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      title: formData.subject,
+      message: formData.message,
+    };
 
         await emailjs.send(
           EMAIL_CONFIG.serviceId!,
